@@ -1,0 +1,207 @@
+/* NAVIGATION */
+
+@media (max-width: 59em) {
+	.btn-mobile-nav {
+		display: block;
+	}
+}
+
+/* HERO SECTION */
+@media (max-width: 1296px) {
+	.header {
+		padding: 0 3rem 4rem 3rem;
+	}
+
+	.section-hero-heading {
+		font-size: 3.2rem;
+	}
+}
+
+@media (max-width: 933px) {
+	.section-hero {
+		display: block;
+		text-align: center;
+	}
+
+	.section-hero-text {
+		margin-bottom: 4rem;
+	}
+
+	.section-hero-para {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+	}
+
+	.section-hero-heading {
+		font-size: 3.5rem;
+		margin-bottom: 2.6rem;
+	}
+
+	#tablet-hero-btn {
+		text-align: center;
+	}
+
+	.cta-btn {
+		padding: 1.5rem 6.6rem;
+	}
+
+	.hero-img {
+		width: 70%;
+	}
+}
+
+@media (max-width: 681px) {
+	.section-hero-para {
+		display: none;
+	}
+
+	.section-hero-heading {
+		font-size: 2.8rem;
+	}
+
+	.cta-btn {
+		padding: 1.5rem 6.6rem;
+		font-size: 2rem;
+	}
+
+	.hero-img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.section-hero-heading {
+		text-align: left;
+		margin-bottom: 1.5rem;
+	}
+
+	#tablet-hero-btn {
+		text-align: left;
+	}
+}
+
+/* ABOUT US SECTION */
+
+@media (max-width: 826px) {
+	.container {
+		max-width: 100rem;
+		text-align: center;
+	}
+
+	.about-heading {
+		font-size: 4.3rem;
+	}
+
+	.content-parent {
+		display: block;
+	}
+
+	#story {
+		max-width: fit-content;
+		text-align: left;
+	}
+
+	#mission {
+		max-width: fit-content;
+		text-align: left;
+	}
+
+	.abt-img {
+		width: 70%;
+	}
+
+	.text-heading {
+		font-size: 2.4rem;
+	}
+
+	.abt-text {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.about-heading {
+		font-size: 3.5rem;
+	}
+
+	.abt-img {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.abt-text {
+		font-size: 1.4rem;
+	}
+
+	#story {
+		max-width: 100%;
+	}
+
+	#mission {
+		max-width: 100%;
+	}
+}
+
+/* CTA SECTION */
+
+@media (max-width: 933px) {
+	.cta-section {
+		text-align: left;
+	}
+
+	.el-cta-text {
+		margin-left: 0;
+	}
+
+	.cta-text {
+		font-size: 2rem;
+	}
+
+	.cta-text2 {
+		font-size: 2rem;
+	}
+
+	.cta-form {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.cta-heading-tertiary {
+		font-size: 2.9rem;
+	}
+
+	.cta-text {
+		font-size: 1.9rem;
+	}
+
+	.cta-text2 {
+		font-size: 1.9rem;
+	}
+}
+
+@media (max-width: 495px) {
+	.cta-heading-tertiary {
+		font-size: 2.4rem;
+
+		margin-left: 0;
+	}
+
+	.cta-text {
+		font-size: 1.9rem;
+	}
+
+	.cta-text2 {
+		font-size: 1.9rem;
+	}
+}
+
+@media (max-width: 495px) {
+	.cta-text {
+		font-size: 1.4rem;
+	}
+
+	.cta-text2 {
+		font-size: 1.4rem;
+	}
+}

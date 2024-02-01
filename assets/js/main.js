@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	const ctaHeading = document.querySelector(".cta-heading");
+	const ctaHeading = document.querySelector(".cta-heading-tertiary");
 
 	const observer = new IntersectionObserver(
 		function (entries, observer) {
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	const ctaTextElements = document.querySelectorAll(".cta-text-box");
+	const ctaTextElements = document.querySelectorAll(".el-cta-text");
 
 	const observer = new IntersectionObserver(
 		function (entries, observer) {
@@ -124,5 +124,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	ctaTextElements.forEach(function (textElement) {
 		observer.observe(textElement);
+	});
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+	const btnNav = document.getElementById("btn_nav");
+	const navBar = document.querySelector(".nav-bar");
+
+	btnNav.addEventListener("click", function () {
+		navBar.style.display =
+			navBar.style.display === "flex" || navBar.style.display === ""
+				? "none"
+				: "flex";
 	});
 });
