@@ -16,42 +16,53 @@
 	<body>
 		<!-- NAVIGATION -->
 
-		<!-- ... (your existing HTML) -->
-
 		<header class="header">
-			<!-- <nav class="section-nav flex">
-				<div class="stratick-logo">
-					<img
-						src="assets/img/logo.png"
-						class="logo"
-						alt="Stratick logo"
-					/>
-				</div>
+			<nav class="nav">
+				<div class="flex nav__wrapper">
+					<div class="nav__logo-box">
+						<a href="/">
+							<img
+								src="assets/img/logo.png"
+								class="nav__logo"
+								alt="Stratick logo"
+							/>
+						</a>
+					</div>
 
-				<div class="nav-bar">
-					<ul class="nav-headers flex">
-						<li class="nav-head" id="one">
-							<a href="#section-about-us">About us</a>
-						</li>
-						<li class="nav-head" id="two">Services</li>
-						<li class="nav-head" id="three">Blog</li>
-					</ul>
+					<div class="nav__link-box">
+						<ul class="nav__link-container flex">
+							<li>
+								<a href="#section-about-us" class="nav__link"
+									>About us</a
+								>
+							</li>
+							<li>
+								<a href="#services-section" class="nav__link"
+									>Services</a
+								>
+							</li>
+							<!-- <li>
+								<a href="#" class="nav__link">Blog</a>
+							</li> -->
+						</ul>
+					</div>
+					<div class="nav__cta-box">
+						<a class="cta nav__cta" href="#">Get in Touch</a>
+						<div class="mobile-nav">
+							<button class="mobile-nav__toggle-btn">
+								<ion-icon
+									name="menu-outline"
+									class="icon-mobile-nav"
+								></ion-icon>
+								<ion-icon
+									name="close-outline"
+									class="icon-mobile-nav"
+								></ion-icon>
+							</button>
+						</div>
+					</div>
 				</div>
-				<div class="cta">
-					<button class="cta-btn" id="btn_cta">Get in Touch</button>
-				</div>
-
-				<button class="btn-mobile-nav">
-					<ion-icon
-						name="menu-outline"
-						class="icon-mobile-nav"
-					></ion-icon>
-					<ion-icon
-						name="close-outline"
-						class="icon-mobile-nav"
-					></ion-icon>
-				</button>
-			</nav> -->
+			</nav>
 
 			<!-- LANDING PAGE -->
 			<section class="section-hero grid">
@@ -64,9 +75,7 @@
 						>
 					</h1>
 
-					<div id="tablet-hero-btn">
-						<button class="cta-btn">Get Started🚀</button>
-					</div>
+					<button class="cta hero__cta">Get Started🚀</button>
 				</div>
 				<div class="section-main-img">
 					<img
@@ -81,8 +90,8 @@
 		<!-- ABOUT US  -->
 		<div class="container">
 			<section class="section-about-us" id="section-about-us">
-				<h1 class="about-heading">About us</h1>
-
+				<h3 class="about-heading">About us</h3>
+				<div class="borderBottom-line"></div>
 				<div class="about-content">
 					<div class="flex content-parent">
 						<div id="story">
@@ -149,6 +158,48 @@
 			</section>
 		</div>
 
+		<!-- SERVICES SECTION  -->
+		<section class="services-section" id="services-section">
+			<h3 class="services_primary_heading">Services</h3>
+
+			<p class="services-para">
+				At Stratick, we offer a range of services designed to elevate
+				your online presence and drive growth.
+			</p>
+			<div class="services_box-wrapper flex">
+				<div class="box-container-one">
+					<h4 class="box-container-heading">E-commerce Setup</h4>
+					<p class="box-container-content">
+						Transform your business into a thriving online store
+						with Shopify, Wordpress etc.
+					</p>
+				</div>
+				<div class="box-container-two">
+					<h4 class="box-container-heading">Digital Marketing</h4>
+					<p class="box-container-content">
+						Craft and execute data-driven digital marketing
+						strategies for maximum ROI.
+					</p>
+				</div>
+			</div>
+			<div class="services_box-wrapper flex">
+				<div class="box-container-three">
+					<h4 class="box-container-heading">Performance Marketing</h4>
+					<p class="box-container-content">
+						Optimize your online advertising campaigns to boost
+						conversions and sales.
+					</p>
+				</div>
+				<div class="box-container-four">
+					<h4 class="box-container-heading">Content Marketing</h4>
+					<p class="box-container-content">
+						Create compelling content that engages your audience and
+						builds brand loyalty.
+					</p>
+				</div>
+			</div>
+		</section>
+
 		<!-- CTA SECTION  -->
 		<section class="cta-section">
 			<div class="cta-text-box">
@@ -165,7 +216,7 @@
 						needs.
 					</p>
 				</div>
-				<form class="cta-form">
+				<!-- <form class="cta-form">
 					<div class="flex cta-flex-label">
 						<label for="name" id="name">Your Name</label>
 						<input
@@ -199,9 +250,21 @@
 							placeholder="12-A, Malviya Nagar, Jaipur"
 						/>
 
-						<button class="submit">Connect now!</button>
+						<button class="submit-btn-cta">Connect now!</button>
 					</div>
-				</form>
+				</form> -->
+
+				<div class="iframe-parent">
+					<iframe
+						src="https://docs.google.com/forms/d/e/1FAIpQLSehoekIt_HRLXc4HWzk8SqTmCRA8vkHY1WG-8eVbXPGrlxLPg/viewform?embedded=true"
+						width="640"
+						height="824"
+						frameborder="0"
+						marginheight="0"
+						marginwidth="0"
+						>Loading…</iframe
+					>
+				</div>
 			</div>
 		</section>
 
