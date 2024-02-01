@@ -13,32 +13,36 @@
 		<link href="assets/css/style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<!-- HEADER -->
-		<header class="header">
-			<section class="section-nav flex">
-				<div class="stratick-logo">
-					<img
-						src="assets/img/logo.png"
-						class="logo"
-						alt="Stratick logo"
-					/>
-				</div>
-				<div class="nav-bar">
-					<ul class="nav-headers flex">
-						<li class="nav-head" id="one">About us</li>
-						<li class="nav-head" id="two">Services</li>
-						<li class="nav-head" id="three">Blog</li>
-					</ul>
-				</div>
-				<div class="cta">
-					<button class="cta-btn" id="btn_nav">Get in Touch</button>
-				</div>
-			</section>
-		</header>
-		<!-- LANDING PAGE -->
-		<main class="main">
+		<!-- NAVIGATION -->
+		<div class="container-hero">
+			<header class="header">
+				<section class="section-nav flex">
+					<div class="stratick-logo">
+						<img
+							src="assets/img/logo.png"
+							class="logo"
+							alt="Stratick logo"
+						/>
+					</div>
+					<div class="nav-bar">
+						<ul class="nav-headers flex">
+							<li class="nav-head" id="one">
+								<a href="#section-about-us">About us</a>
+							</li>
+							<li class="nav-head" id="two">Services</li>
+							<li class="nav-head" id="three">Blog</li>
+						</ul>
+					</div>
+					<div class="cta">
+						<button class="cta-btn" id="btn_nav">
+							Get in Touch
+						</button>
+					</div>
+				</section>
+			</header>
+			<!-- LANDING PAGE -->
 			<section class="section-hero grid">
-				<div class="section-hero-text">
+				<div class="section-hero-text" id="header_text">
 					<p class="section-hero-para">Innovate with Stratick</p>
 					<h1 class="section-hero-heading">
 						Unlock Your Online Potential with Expert
@@ -57,53 +61,67 @@
 					/>
 				</div>
 			</section>
-			<!-- ABOUT US PAGE -->
-			<!-- <section class="section-about-us">
-				<div class="section-about-us-content">
-					<h1 class="about-us-heading">About us</h1>
-					<div class="about-parent flex">
-						<div class="story">
-							<div class="about-story-img">
+		</div>
+		<!-- ABOUT US  -->
+		<div class="container">
+			<section class="section-about-us" id="section-about-us">
+				<h1 class="about-heading">About us</h1>
+
+				<div class="about-content">
+					<div class="flex content-parent">
+						<div id="story">
+							<div class="story-image">
 								<img
-									src="assets/img/about-us-story.png"
+									src="assets/img/story_abt_us.png"
 									class="abt-img"
-									alt=" Our Story"
+									id="story_img"
+									alt="Our Story"
 								/>
 							</div>
-							<div class="about-story-text">
-								<h3 class="abt-head">OUR STORY</h3>
-								<p class="abt-text" id="text_story_one">
+							<div class="story-text" id="header_text">
+								<h3 class="text-heading" id="header_story">
+									our story
+								</h3>
+								<p class="abt-text" id="story_text_one">
 									At Stratick, we are passionate about helping
 									businesses thrive in the digital age.
 								</p>
-								<p class="abt-text" id="text-story-two">
+								<p class="abt-text" id="story_text_two">
 									Our team of experts is dedicated to
 									delivering results-driven digital marketing
 									solutions tailored to your unique needs.
 								</p>
+								<p class="abt-text" id="story_text_three">
+									We envisioned a future where every business,
+									regardless of its size or industry, could
+									harness the full potential of the online
+									world.
+								</p>
 							</div>
 						</div>
-						<div class="mission">
-							<div class="about-mission-img">
+						<div id="mission">
+							<div class="mission-img">
 								<img
-									src="assets/img/about-us-mission.png"
+									src="assets/img/mission_abt_us.png"
 									class="abt-img"
-									id="mission-img"
-									alt=" Our Mission"
+									id="mission_img"
+									alt="Our Mission"
 								/>
 							</div>
-							<div class="about-mission-text">
-								<h3 class="abt-head">OUR MISSION</h3>
-								<p class="abt-text" id="text_mission_one">
+							<div class="mission-text">
+								<h3 class="text-heading" id="mission_heading">
+									our mission
+								</h3>
+								<p class="abt-text" id="mission_text_one">
 									To empower businesses with the tools and
 									strategies needed to succeed online.
 								</p>
-								<p class="abt-text" id="text_mission_two">
+								<p class="abt-text" id="mission_text_two">
 									To provide unparalleled expertise in
 									e-commerce setup, digital marketing, and
 									performance marketing.
 								</p>
-								<p class="abt-text" id="text_mission_three">
+								<p class="abt-text" id="mission_text_two">
 									To foster long-lasting partnerships with our
 									clients based on trust, transparency, and
 									results.
@@ -112,16 +130,67 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
-		</main>
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-		></script>
+			</section>
+		</div>
+
+		<!-- CTA SECTION -->
+		<section class="cta-section">
+			<h1 class="cta-heading">Get in Touch</h1>
+			<div class="cta-text-box">
+				<div class="el-cta-text">
+					<h3 class="cta-heading-tertiary">
+						We're here to bring your vision to life!
+					</h3>
+					<p class="cta-text">
+						Ready to explore how our talented team can help your
+						business grow online?
+					</p>
+					<p class="cta-text2">
+						Contact us today to discuss your digital marketing
+						needs.
+					</p>
+				</div>
+
+				<form class="cta-form">
+					<div class="flex cta-flex-label">
+						<label for="name" id="name">Your Name</label>
+						<input
+							type="name"
+							id="name"
+							name="name"
+							placeholder="John Cruise"
+							required
+						/>
+
+						<label for="phone" id="phone">Phone Number</label>
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							placeholder="968741xxxx"
+							required
+						/>
+
+						<label for="email">Email address</label>
+						<input
+							id="email"
+							type="email"
+							placeholder="me@example.com"
+						/>
+
+						<label for="address">Physical address</label>
+						<input
+							id="address"
+							type="text"
+							placeholder="12-A, Malviya Nagar, Jaipur"
+						/>
+
+						<button class="submit">Connect now!</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
