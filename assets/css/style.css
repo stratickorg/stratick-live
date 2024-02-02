@@ -189,6 +189,10 @@ a {
 	font-size: 2.1rem;
 }
 
+.hero__cta:hover {
+	background-color: #3861f1a8;
+}
+
 .hero-img {
 	width: 100%;
 }
@@ -470,15 +474,13 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	height: 100vh;
 	margin: 0;
 }
 
 iframe {
-	width: 80%; /* Adjust the width as needed */
-	height: 60vh;
+	height: 90vh;
 }
-
 /* Form */
 
 /* .cta-form {

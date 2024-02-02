@@ -18,24 +18,34 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	// ... (your existing code)
-
-	// Update the selector to match the "Services" link
 	const servicesLink = document.querySelector(
 		'.nav__link[href="#services-section"]'
 	);
 
-	// Add a click event listener to the "Services" link
 	servicesLink.addEventListener("click", function (e) {
 		e.preventDefault();
 
-		// Scroll to the "Services" section smoothly
 		document.querySelector("#services-section").scrollIntoView({
 			behavior: "smooth",
 		});
 	});
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+	const contactLink = document.querySelector(
+		'.nav__link[href="#cta-section"]'
+	);
+
+	contactLink.addEventListener("click", function (e) {
+		e.preventDefault();
+
+		document.querySelector("#cta-section").scrollIntoView({
+			behavior: "smooth",
+		});
+	});
+});
+
+//Animation for Aboutus section heading
 document.addEventListener("DOMContentLoaded", function () {
 	const aboutHeading = document.querySelector(".about-heading");
 
@@ -54,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	observer.observe(aboutHeading);
 });
 
+//Animation for Aboutus section images
 document.addEventListener("DOMContentLoaded", function () {
 	const abtImages = document.querySelectorAll(".abt-img");
 
@@ -74,9 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+//Animation for Aboutus section headers
 document.addEventListener("DOMContentLoaded", function () {
 	const storyTextElements = document.querySelectorAll(".story-text");
-	const missionTextElements = document.querySelectorAll(".mission-text");
 
 	const observer = new IntersectionObserver(
 		function (entries, observer) {
@@ -95,6 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+//Animation for Aboutus section heading
 document.addEventListener("DOMContentLoaded", function () {
 	const missionTextElements = document.querySelectorAll(".mission-text");
 
@@ -115,6 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+//Animation for cta section heading
 document.addEventListener("DOMContentLoaded", function () {
 	const ctaHeading = document.querySelector(".cta-heading-tertiary");
 
@@ -133,6 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	observer.observe(ctaHeading);
 });
 
+//Animation for cta section content
 document.addEventListener("DOMContentLoaded", function () {
 	const ctaTextElements = document.querySelectorAll(".el-cta-text");
 
@@ -153,6 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+//Animation for services section heading
 document.addEventListener("DOMContentLoaded", function () {
 	const servicesHeading = document.querySelector(".services_primary_heading");
 
@@ -171,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	observer.observe(servicesHeading);
 });
 
+//Animation for services section paragraph
 document.addEventListener("DOMContentLoaded", function () {
 	const servicesPara = document.querySelectorAll(".services-para");
 
@@ -191,6 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+//Animation for services section boxes
 document.addEventListener("DOMContentLoaded", function () {
 	const servicesBox = document.querySelectorAll(".services_box-wrapper");
 
@@ -212,13 +229,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	const btnNav = document.getElementById("btn_nav");
-	const navBar = document.querySelector(".nav-bar");
+	const ctaButton = document.querySelector(".nav__cta");
+	const heroButton = document.querySelector(".hero__cta");
+	const ctaSection = document.querySelector("#cta-section");
 
-	btnNav.addEventListener("click", function () {
-		navBar.style.display =
-			navBar.style.display === "flex" || navBar.style.display === ""
-				? "none"
-				: "flex";
+	ctaButton.addEventListener("click", function (e) {
+		e.preventDefault();
+
+		ctaSection.scrollIntoView({
+			behavior: "smooth",
+		});
+	});
+
+	heroButton.addEventListener("click", function (e) {
+		e.preventDefault();
+
+		ctaSection.scrollIntoView({
+			behavior: "smooth",
+		});
 	});
 });
