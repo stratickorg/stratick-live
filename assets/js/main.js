@@ -1,5 +1,6 @@
 "use strict";
 
+// NAVIGATION (MEDIA QUERY)
 const mobileNavBtn = document.querySelector(".mobile-nav__toggle-btn");
 const nav = document.querySelector(".nav");
 
@@ -17,6 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 	});
 });
 
+//NAV ELEMENT SMOOTH BEHAVIOR
 document.addEventListener("DOMContentLoaded", function () {
 	const servicesLink = document.querySelector(
 		'.nav__link[href="#services-section"]'
@@ -45,7 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-//Animation for Aboutus section heading
+//HEADING ANIMATIONS
+
+//Animation for ABOUTUS section heading
 document.addEventListener("DOMContentLoaded", function () {
 	const aboutHeading = document.querySelector(".about-heading");
 
@@ -64,15 +68,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	observer.observe(aboutHeading);
 });
 
-//Animation for Aboutus section images
+//Animation for WHYCHOOSEUS section heading
 document.addEventListener("DOMContentLoaded", function () {
-	const abtImages = document.querySelectorAll(".abt-img");
+	const whyChooseHeading = document.querySelector(".why-choose");
 
 	const observer = new IntersectionObserver(
 		function (entries, observer) {
 			entries.forEach(function (entry) {
 				if (entry.isIntersecting) {
-					entry.target.classList.add("show");
+					whyChooseHeading.classList.add("show");
 					observer.unobserve(entry.target);
 				}
 			});
@@ -80,20 +84,18 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ threshold: 0.5 }
 	);
 
-	abtImages.forEach(function (img) {
-		observer.observe(img);
-	});
+	observer.observe(whyChooseHeading);
 });
 
-//Animation for Aboutus section headers
+//Animation for TESTIMONIALS section heading
 document.addEventListener("DOMContentLoaded", function () {
-	const storyTextElements = document.querySelectorAll(".story-text");
+	const testimonialsHeading = document.querySelector(".testimonials-heading");
 
 	const observer = new IntersectionObserver(
 		function (entries, observer) {
 			entries.forEach(function (entry) {
 				if (entry.isIntersecting) {
-					entry.target.classList.add("show");
+					testimonialsHeading.classList.add("show");
 					observer.unobserve(entry.target);
 				}
 			});
@@ -101,35 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ threshold: 0.5 }
 	);
 
-	storyTextElements.forEach(function (textElement) {
-		observer.observe(textElement);
-	});
+	observer.observe(testimonialsHeading);
 });
 
-//Animation for Aboutus section heading
+//Animation for CTA section heading
 document.addEventListener("DOMContentLoaded", function () {
-	const missionTextElements = document.querySelectorAll(".mission-text");
-
-	const observer = new IntersectionObserver(
-		function (entries, observer) {
-			entries.forEach(function (entry) {
-				if (entry.isIntersecting) {
-					entry.target.classList.add("show");
-					observer.unobserve(entry.target);
-				}
-			});
-		},
-		{ threshold: 0.5 }
-	);
-
-	missionTextElements.forEach(function (textElement) {
-		observer.observe(textElement);
-	});
-});
-
-//Animation for cta section heading
-document.addEventListener("DOMContentLoaded", function () {
-	const ctaHeading = document.querySelector(".cta-heading-tertiary");
+	const ctaHeading = document.querySelector(".cta-heading");
 
 	const observer = new IntersectionObserver(
 		function (entries, observer) {
@@ -146,15 +125,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	observer.observe(ctaHeading);
 });
 
-//Animation for cta section content
+//Animation for CTA section heading
 document.addEventListener("DOMContentLoaded", function () {
-	const ctaTextElements = document.querySelectorAll(".el-cta-text");
+	const portfolioHeading = document.querySelector(".portfolio-heading");
 
 	const observer = new IntersectionObserver(
 		function (entries, observer) {
 			entries.forEach(function (entry) {
 				if (entry.isIntersecting) {
-					entry.target.classList.add("show");
+					portfolioHeading.classList.add("show");
 					observer.unobserve(entry.target);
 				}
 			});
@@ -162,71 +141,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ threshold: 0.5 }
 	);
 
-	ctaTextElements.forEach(function (textElement) {
-		observer.observe(textElement);
-	});
+	observer.observe(portfolioHeading);
 });
 
-//Animation for services section heading
-document.addEventListener("DOMContentLoaded", function () {
-	const servicesHeading = document.querySelector(".services_primary_heading");
-
-	const observer = new IntersectionObserver(
-		function (entries, observer) {
-			entries.forEach(function (entry) {
-				if (entry.isIntersecting) {
-					servicesHeading.classList.add("show");
-					observer.unobserve(entry.target);
-				}
-			});
-		},
-		{ threshold: 0.5 }
-	);
-
-	observer.observe(servicesHeading);
-});
-
-//Animation for services section paragraph
-document.addEventListener("DOMContentLoaded", function () {
-	const servicesPara = document.querySelectorAll(".services-para");
-
-	const observer = new IntersectionObserver(
-		function (entries, observer) {
-			entries.forEach(function (entry) {
-				if (entry.isIntersecting) {
-					entry.target.classList.add("show");
-					observer.unobserve(entry.target);
-				}
-			});
-		},
-		{ threshold: 0.5 }
-	);
-
-	servicesPara.forEach(function (textElement) {
-		observer.observe(textElement);
-	});
-});
-
-//Animation for services section boxes
-document.addEventListener("DOMContentLoaded", function () {
-	const servicesBox = document.querySelectorAll(".services_box-wrapper");
-
-	const observer = new IntersectionObserver(
-		function (entries, observer) {
-			entries.forEach(function (entry) {
-				if (entry.isIntersecting) {
-					entry.target.classList.add("show");
-					observer.unobserve(entry.target);
-				}
-			});
-		},
-		{ threshold: 0.5 }
-	);
-
-	servicesBox.forEach(function (textElement) {
-		observer.observe(textElement);
-	});
-});
+//CONTENT
 
 document.addEventListener("DOMContentLoaded", function () {
 	const ctaButton = document.querySelector(".nav__cta");
@@ -248,4 +166,43 @@ document.addEventListener("DOMContentLoaded", function () {
 			behavior: "smooth",
 		});
 	});
+});
+
+// TESTIMONIAL SECTION //
+document.addEventListener("DOMContentLoaded", function () {
+	const testimonialSlider = document.getElementById("testimonial-slider");
+	const testimonial1 = document.getElementById("testimonial1");
+	const testimonial2 = document.getElementById("testimonial2");
+	const prevBtn = document.querySelector(".prevBtn");
+	const nextBtn = document.querySelector(".nextBtn");
+
+	// Initially hide the second testimonial card
+	testimonial2.style.display = "none";
+
+	// Function to show next testimonial after a set time
+	function showNextTestimonial() {
+		testimonial1.style.display = "none";
+		testimonial2.style.display = "flex";
+
+		// Reset after 7 seconds (adjust the time as needed)
+		setTimeout(function () {
+			testimonial1.style.display = "flex";
+			testimonial2.style.display = "none";
+		}, 7000);
+	}
+
+	// Event listeners for navigation buttons
+	prevBtn.addEventListener("click", function () {
+		testimonial1.style.display = "flex";
+		testimonial2.style.display = "none";
+	});
+
+	nextBtn.addEventListener("click", function () {
+		showNextTestimonial();
+	});
+
+	// Automatically show the next testimonial after a set time
+	setInterval(function () {
+		showNextTestimonial();
+	}, 7000);
 });

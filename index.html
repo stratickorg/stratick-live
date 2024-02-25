@@ -1,246 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Stratick</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="assets/css/style.css" rel="stylesheet" />
-		<link href="assets/css/queries.css" rel="stylesheet" />
-	</head>
-	<body>
-		<!-- NAVIGATION -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stratick</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/queries.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- NAVIGATION -->
 
-		<header class="header">
-			<nav class="nav">
-				<div class="flex nav__wrapper">
-					<div class="nav__logo-box">
-						<a href="/">
-							<img
-								src="assets/img/logo.png"
-								class="nav__logo"
-								alt="Stratick logo"
-							/>
-						</a>
-					</div>
+        <header class="header">
+            <nav class="nav">
+                <div class="flex nav__wrapper">
+                    <div class="nav__logo-box">
+                        <a href="/">
+                            <img
+                                src="assets/img/hero-sec/logo-nav.png"
+                                class="nav__logo"
+                                alt="Stratick logo"
+                            />
+                        </a>
+                    </div>
 
-					<div class="nav__link-box">
-						<ul class="nav__link-container flex">
-							<li>
-								<a href="#section-about-us" class="nav__link"
-									>About us</a
-								>
-							</li>
-							<li>
-								<a href="#services-section" class="nav__link"
-									>Services</a
-								>
-							</li>
-							<li>
-								<a href="#cta-section" class="nav__link"
-									>Contact</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="nav__cta-box">
-						<a class="cta nav__cta" href="#cta">Get in Touch</a>
-						<div class="mobile-nav">
-							<button class="mobile-nav__toggle-btn">
-								<ion-icon
-									name="menu-outline"
-									class="icon-mobile-nav"
-								></ion-icon>
-								<ion-icon
-									name="close-outline"
-									class="icon-mobile-nav"
-								></ion-icon>
-							</button>
-						</div>
-					</div>
-				</div>
-			</nav>
+                    <div class="nav__link-box">
+                        <ul class="nav__link-container flex">
+                            <li>
+                                <a href="#section-about-us" class="nav__link"
+                                    >About us</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#services-section" class="nav__link"
+                                    >Services</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#cta-section" class="nav__link"
+                                    >Contact</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#portfolio-section" class="nav__link"
+                                    >portfolio</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#testimonials-section"
+                                    class="nav__link"
+                                    >testimonials</a
+                                >
+                            </li>
+                            <li>
+                                <a class="nav__link" href="./referral.html"
+                                    >referrals</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__cta-box">
+                        <a class="cta nav__cta" href="#cta">Get in Touch</a>
+                        <div class="mobile-nav">
+                            <button class="mobile-nav__toggle-btn">
+                                <ion-icon
+                                    name="menu-outline"
+                                    class="icon-mobile-nav"
+                                ></ion-icon>
+                                <ion-icon
+                                    name="close-outline"
+                                    class="icon-mobile-nav"
+                                ></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
-			<!-- LANDING PAGE -->
-			<section class="section-hero grid">
-				<div class="section-hero-text" id="header_text">
-					<p class="section-hero-para">Innovate with Stratick</p>
-					<h1 class="section-hero-heading">
-						Unlock Your Online Potential with Expert
-						<span class="el-span-hero"
-							>Digital Marketing Solutions</span
-						>
-					</h1>
+            <!-- LANDING PAGE -->
+            <section class="section-hero grid">
+                <div class="section-hero-text" id="header_text">
+                    <p class="section-hero-para">Innovate with Stratick</p>
+                    <h1 class="section-hero-heading">
+                        Unlock Your Online Potential with Expert
+                        <span class="el-span-hero"
+                            >Digital Marketing Solutions</span
+                        >
+                    </h1>
 
-					<button class="cta hero__cta">Get Started🚀</button>
-				</div>
-				<div class="section-main-img">
-					<img
-						src="assets/img/hero-img.png"
-						class="hero-img"
-						alt="landing page image"
-					/>
-				</div>
-			</section>
-		</header>
+                    <button class="cta hero__cta">Get Started🚀</button>
+                </div>
+                <div class="section-main-img">
+                    <img
+                        src="assets/img/hero-sec/hero-img.png"
+                        class="hero-img"
+                        alt="landing page image"
+                    />
+                </div>
+            </section>
+        </header>
 
-		<!-- ABOUT US  -->
-		<div class="container">
-			<section class="section-about-us" id="section-about-us">
-				<h3 class="about-heading">About us</h3>
-				<div class="borderBottom-line"></div>
-				<div class="about-content">
-					<div class="flex content-parent">
-						<div id="story">
-							<div class="story-image">
-								<img
-									src="assets/img/story_abt_us.png"
-									class="abt-img"
-									id="story_img"
-									alt="Our Story"
-								/>
-							</div>
-							<div class="story-text" id="header_text">
-								<h3 class="text-heading" id="header_story">
-									our story
-								</h3>
-								<p class="abt-text" id="story_text_one">
-									At Stratick, we are passionate about helping
-									businesses thrive in the digital age.
-								</p>
-								<p class="abt-text" id="story_text_two">
-									Our team of experts is dedicated to
-									delivering results-driven digital marketing
-									solutions tailored to your unique needs.
-								</p>
-								<p class="abt-text" id="story_text_three">
-									We envisioned a future where every business,
-									regardless of its size or industry, could
-									harness the full potential of the online
-									world.
-								</p>
-							</div>
-						</div>
-						<div id="mission">
-							<div class="mission-img">
-								<img
-									src="assets/img/mission_abt_us.png"
-									class="abt-img"
-									id="mission_img"
-									alt="Our Mission"
-								/>
-							</div>
-							<div class="mission-text">
-								<h3 class="text-heading" id="mission_heading">
-									our mission
-								</h3>
-								<p class="abt-text" id="mission_text_one">
-									To empower businesses with the tools and
-									strategies needed to succeed online.
-								</p>
-								<p class="abt-text" id="mission_text_two">
-									To provide unparalleled expertise in
-									e-commerce setup, digital marketing, and
-									performance marketing.
-								</p>
-								<p class="abt-text" id="mission_text_two">
-									To foster long-lasting partnerships with our
-									clients based on trust, transparency, and
-									results.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
+        <!-- ABOUT US  -->
+        <div class="container">
+            <section class="section-about-us" id="section-about-us">
+                <h3 class="about-heading headings">About us</h3>
+                <div class="borderBottom-line"></div>
+                <!-- <div class="body-container"> -->
+                <div class="about-content">
+                    <div class="flex content-parent">
+                        <div id="story">
+                            <div class="story-image">
+                                <img
+                                    src="assets/img/about-sec/story_abt_us.png"
+                                    class="abt-img"
+                                    id="story_img"
+                                    alt="Our Story"
+                                />
+                            </div>
+                            <div class="story-text" id="header_text">
+                                <h4 class="text-heading" id="header_story">
+                                    our story
+                                </h4>
+                                <p class="abt-text" id="story_text_one">
+                                    At Stratick, we are passionate about helping
+                                    businesses thrive in the digital age.
+                                </p>
+                                <p class="abt-text" id="story_text_two">
+                                    Our team of experts is dedicated to
+                                    delivering results-driven digital marketing
+                                    solutions tailored to your unique needs.
+                                </p>
+                                <p class="abt-text" id="story_text_three">
+                                    We envisioned a future where every business,
+                                    regardless of its size or industry, could
+                                    harness the full potential of the online
+                                    world.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="mission">
+                            <div class="mission-img">
+                                <img
+                                    src="assets/img/about-sec/mission_abt_us.png"
+                                    class="abt-img"
+                                    id="mission_img"
+                                    alt="Our Mission"
+                                />
+                            </div>
+                            <div class="mission-text">
+                                <h4 class="text-heading" id="mission_heading">
+                                    our mission
+                                </h4>
+                                <p class="abt-text" id="mission_text_one">
+                                    To empower businesses with the tools and
+                                    strategies needed to succeed online.
+                                </p>
+                                <p class="abt-text" id="mission_text_two">
+                                    To provide unparalleled expertise in
+                                    e-commerce setup, digital marketing, and
+                                    performance marketing.
+                                </p>
+                                <p class="abt-text" id="mission_text_two">
+                                    To foster long-lasting partnerships with our
+                                    clients based on trust, transparency, and
+                                    results.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </section>
+        </div>
 
-		<!-- SERVICES SECTION  -->
-		<section class="services-section" id="services-section">
-			<h3 class="services_primary_heading">Services</h3>
+        <!--WHY CHOOSE US SECTION -->
+        <div class="container-whyChoose">
+            <section class="why-choose-us">
+                <h3 class="why-choose">Why Choose Us</h3>
+                <div class="borderBottom-line"></div>
+                <div class="choose-wrapper grid">
+                    <div class="step-text-box">
+                        <h4 class="step-number">01</h4>
+                        <h4 class="heading-tertiary">
+                            A dynamic team with fresh perspectives.
+                        </h4>
+                        <p class="step-description">
+                            Our team at Stratick comprises forward-thinking
+                            individuals who bring diverse backgrounds and
+                            expertise to the table. We believe in embracing
+                            innovation and staying ahead of industry trends,
+                            ensuring that our strategies are always cutting-edge
+                            and effective. With our dynamic team, you can trust
+                            that we'll approach your business challenges with
+                            creativity and enthusiasm, offering fresh
+                            perspectives that drive results.
+                        </p>
+                    </div>
+                    <div class="step-img-box">
+                        <img
+                            src="assets/img/why-choose/pic1-whychooseUs.png"
+                            class="step-img"
+                            alt="A dynamic team sharing ideas and generating new minds"
+                        />
+                    </div>
 
-			<p class="services-para">
-				At Stratick, we offer a range of services designed to elevate
-				your online presence and drive growth.
-			</p>
-			<div class="services_box-wrapper flex">
-				<div class="box-container-one">
-					<h4 class="box-container-heading">E-commerce Setup</h4>
-					<p class="box-container-content">
-						Transform your business into a thriving online store
-						with Shopify, Wordpress etc.
-					</p>
-				</div>
-				<div class="box-container-two">
-					<h4 class="box-container-heading">Digital Marketing</h4>
-					<p class="box-container-content">
-						Craft and execute data-driven digital marketing
-						strategies for maximum ROI.
-					</p>
-				</div>
-			</div>
-			<div class="services_box-wrapper flex">
-				<div class="box-container-three">
-					<h4 class="box-container-heading">Performance Marketing</h4>
-					<p class="box-container-content">
-						Optimize your online advertising campaigns to boost
-						conversions and sales.
-					</p>
-				</div>
-				<div class="box-container-four">
-					<h4 class="box-container-heading">Content Marketing</h4>
-					<p class="box-container-content">
-						Create compelling content that engages your audience and
-						builds brand loyalty.
-					</p>
-				</div>
-			</div>
-		</section>
+                    <div class="step-img-box">
+                        <img
+                            src="assets/img/why-choose/pic2-WhyChooseUs.png"
+                            class="step-img"
+                            alt="A team Dedicated to tailoring strategies to client's unique
+							needs."
+                        />
+                    </div>
 
-		<!-- CTA SECTION  -->
-		<section class="cta-section" id="cta-section">
-			<div class="cta-text-box">
-				<h3 class="cta-heading-tertiary">
-					We're here to bring your vision to life!
-				</h3>
-				<div class="el-cta-text">
-					<p class="cta-text">
-						Ready to explore how our talented team can help your
-						business grow online?
-					</p>
-					<p class="cta-text2">
-						Contact us today to discuss your digital marketing
-						needs.
-					</p>
-				</div>
+                    <div class="step-text-box">
+                        <h4 class="step-number">02</h4>
+                        <h4 class="heading-tertiary">
+                            Dedicated to tailoring strategies to your unique
+                            needs.
+                        </h4>
+                        <p class="step-description">
+                            At Stratick, we understand that every business is
+                            different, with its own goals, challenges, and
+                            target audience. That's why we take a personalized
+                            approach to every client, taking the time to truly
+                            understand your specific needs and objectives.
+                            Whether you're looking to increase brand awareness,
+                            drive traffic to your website, or boost conversions,
+                            we'll tailor our strategies to align with your
+                            unique requirements, ensuring maximum effectiveness
+                            and ROI.
+                        </p>
+                    </div>
 
-				<div class="iframe-parent">
-					<iframe
-						src="https://docs.google.com/forms/d/e/1FAIpQLSehoekIt_HRLXc4HWzk8SqTmCRA8vkHY1WG-8eVbXPGrlxLPg/viewform?embedded=true"
-						width="640"
-						height="824"
-						frameborder="0"
-						marginheight="0"
-						marginwidth="0"
-						>Loading…</iframe
-					>
-				</div>
-			</div>
-		</section>
+                    <div class="step-text-box">
+                        <h4 class="step-number">03</h4>
+                        <h4 class="heading-tertiary">
+                            Committed to delivering outstanding service and
+                            value.
+                        </h4>
+                        <p class="step-description">
+                            Our commitment to excellence extends beyond just
+                            delivering results – we're dedicated to providing an
+                            exceptional client experience every step of the way.
+                            From our initial consultation to ongoing support and
+                            communication, we prioritize your satisfaction and
+                            success. We go above and beyond to exceed your
+                            expectations, offering unparalleled service,
+                            reliability, and value that sets us apart from the
+                            competition.
+                        </p>
+                    </div>
+                    <div class="step-img-box">
+                        <img
+                            src="assets/img/why-choose/pic3-WhyChooseUs.png"
+                            class="step-img"
+                            alt="A team committed to delivering outstanding service and
+							value."
+                        />
+                    </div>
 
-		<script src="assets/js/main.js"></script>
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-		></script>
-	</body>
+                    <div class="step-img-box">
+                        <img
+                            src="assets/img/why-choose/pic4-WhyChooseUs.jpg"
+                            class="step-img img-2"
+                            alt="Transparent pricing and exceptional customer support."
+                        />
+                    </div>
+
+                    <div class="step-text-box">
+                        <h4 class="step-number">04</h4>
+                        <h4 class="heading-tertiary">
+                            Transparent pricing and exceptional customer support
+                        </h4>
+                        <p class="step-description">
+                            Transparency is at the core of everything we do at
+                            Stratick, including our pricing. We believe in
+                            upfront honesty and clarity when it comes to costs,
+                            so you'll never encounter hidden fees or unexpected
+                            charges. Additionally, our team is always here to
+                            support you whenever you need assistance or have
+                            questions. With our responsive and knowledgeable
+                            customer support team, you can trust that we'll be
+                            there to provide guidance and assistance whenever
+                            you need it, ensuring a seamless experience from
+                            start to finish.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SERVICES SECTION  -->
+        <div class="container-services">
+            <section class="services-section" id="services-section">
+                <h3 class="services_primary_heading">Services</h3>
+                <div class="borderBottom-line"></div>
+                <!-- <div class="body-container"> -->
+                <h4 class="services-para secondary-heading">
+                    At Stratick, we offer a range of services designed to
+                    elevate your online presence and drive growth.
+                </h4>
+                <div class="services_box-wrapper flex">
+                    <div class="box-container-one">
+                        <h4 class="box-container-heading">E-commerce Setup</h4>
+                        <p class="box-container-content">
+                            Transform your business into a thriving online store
+                            with Shopify, Wordpress etc.
+                        </p>
+                    </div>
+                    <div class="box-container-two">
+                        <h4 class="box-container-heading">Digital Marketing</h4>
+                        <p class="box-container-content">
+                            Craft and execute data-driven digital marketing
+                            strategies for maximum ROI.
+                        </p>
+                    </div>
+                </div>
+                <div class="services_box-wrapper flex">
+                    <div class="box-container-three">
+                        <h4 class="box-container-heading">
+                            Performance Marketing
+                        </h4>
+                        <p class="box-container-content">
+                            Optimize your online advertising campaigns to boost
+                            conversions and sales.
+                        </p>
+                    </div>
+                    <div class="box-container-four">
+                        <h4 class="box-container-heading">Content Marketing</h4>
+                        <p class="box-container-content">
+                            Create compelling content that engages your audience
+                            and builds brand loyalty.
+                        </p>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </section>
+        </div>
+
+        <!-- PORTFOLIO SECTION -->
+        <section class="portfolio-section" id="portfolio-section">
+            <h3 class="portfolio-heading">Our Clients</h3>
+            <div class="borderBottom-line"></div>
+            <h4 class="portfolio-sub-heading secondary-heading">
+                We're proud to work with wonderful clients, each with unique
+                needs and goals. We are fully dedicated to helping them achieve
+                their online business objectives.
+            </h4>
+
+            <div class="wrapper grid">
+                <div class="container-logo flex">
+                    <img
+                        src="assets/img/clients-logo/ashima_logo.png"
+                        class="ashima-logo logo"
+                        alt="Ashima Logo"
+                    />
+                    <img
+                        src="assets/img/clients-logo/logo.png"
+                        class="linen-bloom-logo logo"
+                        alt="Logo"
+                    />
+                    <img
+                        src="assets/img/clients-logo/Logo_sg.png"
+                        class="soniya-logo logo"
+                        alt="Logo Sg"
+                    />
+                </div>
+                <div class="container-logo flex">
+                    <img
+                        src="assets/img/clients-logo/PSK_LOGO.png"
+                        class="logo"
+                        alt="PSK Logo"
+                    />
+                    <img
+                        src="assets/img/clients-logo/Seema-logo.png"
+                        class="logo"
+                        alt="Seema Logo"
+                    />
+                    <img
+                        src="assets/img/clients-logo/Vana_logo.jpg"
+                        class="logo"
+                        alt="Vana Logo"
+                    />
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA SECTION  -->
+        <section class="cta-section" id="cta-section">
+            <div class="cta-text-box">
+                <h3 class="cta-heading">Get in Touch</h3>
+                <div class="borderBottom-line"></div>
+                <!-- <div class="body-container"> -->
+                <h4 class="cta-heading-tertiary secondary-heading">
+                    We're here to bring your vision to life!
+                </h4>
+                <div class="el-cta-text">
+                    <p class="cta-text">
+                        Ready to explore how our talented team can help your
+                        business grow online?
+                    </p>
+                    <p class="cta-text2">
+                        Contact us today to discuss your digital marketing
+                        needs.
+                    </p>
+                </div>
+
+                <div class="iframe-parent">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSehoekIt_HRLXc4HWzk8SqTmCRA8vkHY1WG-8eVbXPGrlxLPg/viewform?embedded=true"
+                        width="640"
+                        height="824"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                        >Loading…</iframe
+                    >
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__social-links-box flex">
+                <img
+                    class="footer__logo"
+                    src="assets/img/hero-sec/logo-footer.png"
+                    alt="Stratick"
+                />
+                <ul class="social-links__container flex">
+                    <li>
+                        <a href="https://www.instagram.com/try_stratick" class="footer-social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__conatct-box flex">
+                <div class="footer__contact--individual-box">
+                    <h4 class="footer__contact--individual-heading">
+                        Address:
+                    </h4>
+                    <p class="footer__contact--individual-desc">
+                        Third floor, M4, Shatabdi Enclave, Sector 49, Noida
+                        (201301), UP, IN
+                    </p>
+                </div>
+                <div class="footer__contact--individual-box">
+                    <h4 class="footer__contact--individual-heading">Mobile:</h4>
+                    <p class="footer__contact--individual-desc">
+                        +91 7615023541 <br>
+                        +91 8112293399
+                    </p>
+                </div>
+                <div class="footer__contact--individual-box">
+                    <h4 class="footer__contact--individual-heading">Email:</h4>
+                    <p class="footer__contact--individual-desc">
+                        stratickorg@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer__copyright-box">
+                Copyright © by Stratick Inc. All rights reserved.
+            </div>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
 </html>
